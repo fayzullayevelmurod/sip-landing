@@ -39,8 +39,11 @@ $color-white: #FFFFFF;
 $color-blue-bg: #ECF1F4;
 $color-blue-20: #00416633;
 $color-blue: #0078D2;
+$color-blue-light: #2189FF;
 $color-black: #000000;
 $color-black-60: #00000099;
+$color-black-40: #00000066;
+$color-stripe: #0020330D;
 
 // colors
 
@@ -251,5 +254,72 @@ address {
     }
 }
 // home
+
+// services
+.services {
+
+    h3 {
+        margin: 120px auto 32px auto;
+        max-width: 800px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 57.6px;
+        text-align: center;
+        color: $color-black-40;
+
+        span {
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            right: -17px;
+            top: -11px;
+        }
+    }
+
+    &_btn {
+        @include flex-full-center();
+        margin-bottom: 120px;
+    }
+
+    button {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 99px;
+        height: 48px;
+        background-color: $color-blue-light;
+        width: 178px;
+        color: $color-white;
+    }
+
+    &_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    &_card {
+        width: calc(100% / 4 - 24px);
+        padding: 20px;
+        border-radius: 20px;
+        background-color: $color-stripe;
+
+        h6 {
+            margin-top: 16px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 28px;
+            color: $color-black-60;
+
+            span {
+                color: $color-black;
+            }
+        }
+    }
+}
+// services
 
 @import './responsive';

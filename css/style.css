@@ -188,6 +188,62 @@ address {
   color: #FFFFFF;
 }
 
+.services h3 {
+  margin: 120px auto 32px auto;
+  max-width: 800px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+.services h3 span {
+  position: relative;
+}
+.services h3 img {
+  position: absolute;
+  right: -17px;
+  top: -11px;
+}
+.services_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.services button {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 99px;
+  height: 48px;
+  background-color: #2189FF;
+  width: 178px;
+  color: #FFFFFF;
+}
+.services_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.services_card {
+  width: calc(25% - 24px);
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(0, 32, 51, 0.0509803922);
+}
+.services_card h6 {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.services_card h6 span {
+  color: #000000;
+}
+
 @media only screen and (max-width: 1300px) {
   .main_container {
     max-width: calc(100% - 20px);
