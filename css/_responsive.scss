@@ -1,0 +1,34 @@
+@media only screen and (max-width: 1300px) {
+  .main {
+    &_container {
+      max-width: calc(100% - 20px);
+    }
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  .header {
+    padding: 5px 0;
+
+    &_container {
+      padding: 0 10px;
+    }
+
+    &_link {
+      display: none;
+    }
+
+    &_right {
+      gap: 2px;
+
+      .header_burger {
+        display: flex;
+      }
+
+      a {
+        display: none;
+      }
+    }
+
+  }
+}

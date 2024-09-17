@@ -1,0 +1,255 @@
+// mixin
+@mixin flex-full-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-full-stretch {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    flex-direction: column;
+}
+
+@mixin flex-start {
+    display: flex;
+    align-items: start;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: .3s ease;
+}
+// mixin
+
+// colors
+$color-dark-blue: #002033;
+$color-blue-7: #00426912;
+$color-blue-80: #00395CCC;
+$color-blue-60: #00203399;
+$color-white: #FFFFFF;
+$color-blue-bg: #ECF1F4;
+$color-blue-20: #00416633;
+$color-blue: #0078D2;
+$color-black: #000000;
+$color-black-60: #00000099;
+
+// colors
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+span, label {
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    background-color: $color-blue-bg;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    outline: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main{
+    &_container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+// header
+.header {
+    padding: 12px 0;
+    background-color: $color-white;
+    border-bottom: 1px solid $color-blue-20;
+
+    &_container {
+        max-width: 1888px;
+        padding: 0 16px;
+        margin: 0 auto;
+        @include flex-center();
+    }
+
+    &_logo {
+        width: 94px;
+        height: 25px;
+
+        svg {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &_left {
+        @include flex-center();
+        gap: 16px;
+
+        a {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: $color-blue-60;
+        }
+
+        a.active {
+            color: $color-dark-blue;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $color-blue;
+            }
+        }
+    }
+
+    &_link {
+        @include flex-center();
+        gap: 12px;
+    }
+
+    &_right {
+        @include flex-center();
+        gap: 4px;
+        margin-left: auto;
+
+        button {
+            height: 24px;
+            @include flex-full-center();
+        }
+
+        .header_burger {
+            width: 24px;
+            height: 24px;
+            display: none;
+        }
+
+        a {
+            width: 75px;
+            height: 24px;
+            border-radius: 4px;
+            background-color: $color-blue-7;
+            @include flex-center();
+            gap: 8px;
+            padding: 6px 8px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $color-blue-80;
+        }
+    }
+
+    .get_access_btn {
+        width: 125px;
+        background-color: $color-dark-blue;
+        color: $color-white;
+        padding: 0 12px;
+        white-space: nowrap;
+    }
+}
+// header
+
+// home
+.home {
+    h1 {
+        padding: 120px 0 40px 0;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 80px;
+        text-align: center;
+        color: $color-black;
+
+        span {
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            top: -32px;
+            right: -64px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: center;
+        color: $color-black-60;
+        max-width: 500px;
+        margin: 0 auto 80px auto;
+    }
+
+    &_btns {
+        @include flex-full-center();
+        gap: 8px;
+        margin-bottom: 40px;
+
+        button {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background-color: $color-blue-7;
+            color: $color-blue-80;
+        }
+
+        button.active {
+            background-color: $color-dark-blue;
+            color: $color-white;
+        }
+    }
+}
+// home
+
+@import './responsive';
