@@ -228,7 +228,7 @@ address {
   gap: 12px;
 }
 .services_card {
-  width: calc(25% - 24px);
+  width: calc(25% - 9px);
   padding: 20px;
   border-radius: 20px;
   background-color: rgba(0, 32, 51, 0.0509803922);
@@ -242,6 +242,108 @@ address {
 }
 .services_card h6 span {
   color: #000000;
+}
+
+.project h3 {
+  margin: 160px 0 80px 0;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  color: #000000;
+}
+.project h3 span {
+  position: relative;
+}
+.project h3 img {
+  position: absolute;
+  top: -50px;
+  right: -64px;
+  margin-bottom: 80px;
+}
+.project_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.project_card {
+  border-radius: 20px;
+  width: calc(33.3333333333% - 11px);
+  background-color: #FFFFFF;
+}
+.project_card_text {
+  padding: 20px 20px 40px 20px;
+}
+.project_card img {
+  padding-left: 20px;
+}
+.project_card h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+.project_card p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.business h3 {
+  margin: 160px auto 80px auto;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  color: #000000;
+  position: relative;
+  max-width: 968px;
+}
+.business h3 img {
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+.business_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.business_card {
+  padding: 32px 20px;
+  width: calc(33.3333333333% - 11px);
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #D8DFE4;
+}
+.business h6 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 56px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.business p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+  margin: 120px 0 24px 0;
+}
+.footer span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgba(0, 32, 51, 0.6);
+  text-align: center;
 }
 
 @media only screen and (max-width: 1300px) {
