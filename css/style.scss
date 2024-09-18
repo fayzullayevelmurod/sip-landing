@@ -213,6 +213,11 @@ address {
 
         span {
             position: relative;
+            background: linear-gradient(to right, #000000, #868686);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
         }
 
         img {
@@ -220,6 +225,13 @@ address {
             top: -32px;
             right: -64px;
         }
+    }
+
+    &_img {
+        box-shadow: 0 38.29px 43.41px rgba(108, 119, 131, 19.55%),
+        0 15.9px 18.03px rgba(108, 119, 131, 15%),
+        0 5.75px 6.52px rgba(108, 119, 131, 10.45%);;
+        border-radius: 12px;
     }
 
     p {
@@ -232,12 +244,26 @@ address {
         margin: 0 auto 80px auto;
     }
 
+    &_btns_in {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+
+    &_btns_in::-webkit-scrollbar {
+        display: none;
+    }
+
     &_btns {
         @include flex-full-center();
         gap: 8px;
         margin-bottom: 40px;
 
         button {
+            white-space: nowrap;
             font-size: 12px;
             font-weight: 400;
             line-height: 18px;
@@ -250,6 +276,12 @@ address {
         button.active {
             background-color: $color-dark-blue;
             color: $color-white;
+        }
+    }
+
+    @media (max-width: 813px) {
+        .home_btns {
+            width: max-content;
         }
     }
 }
@@ -334,6 +366,11 @@ address {
 
         span {
             position: relative;
+            background: linear-gradient(to right, #BBAE39, #DA7D48);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
         }
 
         img {
@@ -393,6 +430,14 @@ address {
         position: relative;
         max-width: 968px;
 
+        span {
+            background: linear-gradient(to bottom, #B875D8, #388BD7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
         img {
             position: absolute;
             top: -30px;
@@ -419,7 +464,7 @@ address {
         font-weight: 600;
         line-height: 56px;
         color: $color-black;
-        @include flex-center();
+        @include flex-full-center();
         gap: 10px;
     }
 
@@ -435,7 +480,7 @@ address {
 // footer
 .footer {
     margin: 120px 0 24px 0;
-    
+
     span {
         display: block;
         font-size: 14px;

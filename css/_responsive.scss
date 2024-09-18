@@ -31,4 +31,108 @@
     }
 
   }
+
+  .home {
+    h1 {
+      font-size: 40px;
+      line-height: 40px;
+      padding: 60px 0 24px 0;
+
+      img {
+        display: none;
+        right: -28px;
+        top: -12px;
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .services {
+    h3 {
+      font-size: 23px;
+      line-height: 32px;
+      margin: 60px 0 24px 0;
+
+      img {
+        display: none;
+      }
+    }
+
+    &_card {
+      width: calc(100% / 2 - 6px);
+    }
+
+    &_btn {
+      margin-bottom: 24px;
+    }
+  }
+
+  .project {
+    h3 {
+      font-size: 23px;
+      line-height: 32px;
+      margin: 60px 0 24px 0;
+
+      img {
+        display: none;
+      }
+    }
+
+    &_card {
+      width: calc(100% / 2 - 8px);
+    }
+  }
+
+  .business {
+    h3 {
+      margin: 60px 0 24px 0;
+      font-size: 23px;
+      line-height: 32px;
+
+      img {
+        display: none;
+      }
+    }
+
+    h6 {
+      font-size: 23px;
+      line-height: 32px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &_card {
+      width: calc(100% / 2 - 8px);
+
+    }
+  }
+
+  .footer {
+    margin: 60px 0 24px 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .services {
+    &_card {
+      width: calc(100%);
+      min-height: 184px;
+    }
+  }
+
+  .project {
+    &_card {
+      width: calc(100%);
+    }
+  }
+
+  .business {
+    &_card {
+      width: calc(100%);
+    }
+  }
 }

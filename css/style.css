@@ -152,11 +152,20 @@ address {
 }
 .home h1 span {
   position: relative;
+  background: linear-gradient(to right, #000000, #868686);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 .home h1 img {
   position: absolute;
   top: -32px;
   right: -64px;
+}
+.home_img {
+  box-shadow: 0 38.29px 43.41px rgba(108, 119, 131, 0.1955), 0 15.9px 18.03px rgba(108, 119, 131, 0.15), 0 5.75px 6.52px rgba(108, 119, 131, 0.1045);
+  border-radius: 12px;
 }
 .home p {
   font-size: 16px;
@@ -167,6 +176,16 @@ address {
   max-width: 500px;
   margin: 0 auto 80px auto;
 }
+.home_btns_in {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.home_btns_in::-webkit-scrollbar {
+  display: none;
+}
 .home_btns {
   display: flex;
   align-items: center;
@@ -175,6 +194,7 @@ address {
   margin-bottom: 40px;
 }
 .home_btns button {
+  white-space: nowrap;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -186,6 +206,12 @@ address {
 .home_btns button.active {
   background-color: #002033;
   color: #FFFFFF;
+}
+@media (max-width: 813px) {
+  .home .home_btns {
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 
 .services h3 {
@@ -254,6 +280,11 @@ address {
 }
 .project h3 span {
   position: relative;
+  background: linear-gradient(to right, #BBAE39, #DA7D48);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 .project h3 img {
   position: absolute;
@@ -301,6 +332,13 @@ address {
   position: relative;
   max-width: 968px;
 }
+.business h3 span {
+  background: linear-gradient(to bottom, #B875D8, #388BD7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 .business h3 img {
   position: absolute;
   top: -30px;
@@ -325,6 +363,7 @@ address {
   color: #000000;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 .business p {
@@ -369,5 +408,76 @@ address {
   }
   .header_right a {
     display: none;
+  }
+  .home h1 {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 60px 0 24px 0;
+  }
+  .home h1 img {
+    display: none;
+    right: -28px;
+    top: -12px;
+    width: 32px;
+    height: 32px;
+  }
+  .services h3 {
+    font-size: 23px;
+    line-height: 32px;
+    margin: 60px 0 24px 0;
+  }
+  .services h3 img {
+    display: none;
+  }
+  .services_card {
+    width: calc(50% - 6px);
+  }
+  .services_btn {
+    margin-bottom: 24px;
+  }
+  .project h3 {
+    font-size: 23px;
+    line-height: 32px;
+    margin: 60px 0 24px 0;
+  }
+  .project h3 img {
+    display: none;
+  }
+  .project_card {
+    width: calc(50% - 8px);
+  }
+  .business h3 {
+    margin: 60px 0 24px 0;
+    font-size: 23px;
+    line-height: 32px;
+  }
+  .business h3 img {
+    display: none;
+  }
+  .business h6 {
+    font-size: 23px;
+    line-height: 32px;
+  }
+  .business h6 svg {
+    width: 20px;
+    height: 20px;
+  }
+  .business_card {
+    width: calc(50% - 8px);
+  }
+  .footer {
+    margin: 60px 0 24px 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .services_card {
+    width: 100%;
+    min-height: 184px;
+  }
+  .project_card {
+    width: 100%;
+  }
+  .business_card {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
