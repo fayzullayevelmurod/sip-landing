@@ -284,6 +284,9 @@ address {
   background-color: #002033;
   color: #FFFFFF;
 }
+.home .swiper {
+  overflow: visible;
+}
 @media (max-width: 813px) {
   .home .home_btns {
     width: -moz-max-content;

@@ -365,6 +365,10 @@ address {
         }
     }
 
+    .swiper {
+        overflow: visible;
+    }
+
     @media (max-width: 813px) {
         .home_btns {
             width: max-content;
