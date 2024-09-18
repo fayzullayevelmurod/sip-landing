@@ -432,6 +432,11 @@ address {
   .services_card {
     width: calc(50% - 6px);
   }
+  .services_card h6 {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 23px;
+  }
   .services_btn {
     margin-bottom: 24px;
   }
@@ -472,7 +477,7 @@ address {
 @media only screen and (max-width: 650px) {
   .services_card {
     width: 100%;
-    min-height: 184px;
+    min-height: 163px;
   }
   .project_card {
     width: 100%;
