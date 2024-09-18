@@ -142,6 +142,83 @@ address {
   white-space: nowrap;
 }
 
+.menu {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #FFFFFF;
+  z-index: 5;
+  transition: 0.3s ease;
+}
+.menu_in {
+  padding: 20px;
+  position: relative;
+}
+.menu_in .menu_close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.menu_in .menu_close svg {
+  width: 32px;
+  height: 32px;
+}
+.menu_link {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.menu_link a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(0, 32, 51, 0.6);
+}
+.menu_right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu_right button {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_right .header_burger {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.menu_right a {
+  width: 75px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: rgba(0, 66, 105, 0.0705882353);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 57, 92, 0.8);
+}
+.menu .get_access_btn {
+  width: 125px;
+  background-color: #002033;
+  color: #FFFFFF;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+.menu.active {
+  left: 0;
+}
+
 .home h1 {
   padding: 120px 0 40px 0;
   font-size: 80px;

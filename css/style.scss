@@ -201,6 +201,92 @@ address {
 }
 // header
 
+// menu
+.menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: $color-white;
+    z-index: 5;
+    @include transition();
+
+    &_in {
+        padding: 20px;
+        position: relative;
+
+        .menu_close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+
+            svg {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    &_link {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 20px;
+
+        a {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: $color-blue-60;
+        }
+    }
+
+    &_right {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        button {
+            height: 24px;
+            @include flex-full-center();
+        }
+
+        .header_burger {
+            width: 24px;
+            height: 24px;
+            display: none;
+        }
+
+        a {
+            width: 75px;
+            height: 24px;
+            border-radius: 4px;
+            background-color: $color-blue-7;
+            @include flex-center();
+            gap: 8px;
+            padding: 6px 8px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $color-blue-80;
+        }
+    }
+
+    .get_access_btn {
+        width: 125px;
+        background-color: $color-dark-blue;
+        color: $color-white;
+        padding: 0 12px;
+        white-space: nowrap;
+    }
+}
+
+.menu.active {
+    left: 0;
+}
+// menu
+
 // home
 .home {
     h1 {
